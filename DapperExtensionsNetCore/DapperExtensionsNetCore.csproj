@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Description>NetCore  Version for  DapperExtension</Description>
+    <NeutralLanguage></NeutralLanguage>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>DapperExtensionsNetCoreVersion</PackageId>
+    <Version>1.0.1</Version>
+    <PackageProjectUrl>https://github.com/httphandlers/Dapper-Extensions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/httphandlers/Dapper-Extensions</RepositoryUrl>
+    <PackageReleaseNotes>NetCore  Version for  DapperExtension</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.30" />
+  </ItemGroup>
+
+</Project>
